@@ -1,0 +1,146 @@
+/* Сброc */
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Конец сброс */
+
+
+/* Стили социальных сетей в шапке */
+
+.mini_header{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #d5d5d5;
+
+}
+
+.mini_header a:link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header_socials_button_wrapper{
+    float: right;
+    margin: 0 7.5% 0 0;
+    border-left: 1px solid #d5d5d5;
+}
+.header_socials_button_item{
+    float: left;
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+}
+
+.header_socials_button_link{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.header_socials_button_link::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: url('img/header_socials.png') no-repeat 0 0;
+}
+
+.header_socials_button_link.vk::before{
+    width: 28px;
+    height: 16px;
+    margin: -8px 0 0 -14px;
+    background-position: -102px 0;
+}
+
+.header_socials_button_link.vk:hover{
+    background: #5f83aa;
+}
+
+.header_socials_button_link.vk:hover::before{
+    background-position: -102px -16px;
+}
+
+.header_socials_button_link.fb::before{
+    width: 10px;
+    height: 19px;
+    margin: -10px 0 0 -5px;
+    background-position: 0 0;
+}
+
+.header_socials_button_link.fb:hover{
+    background: #496194;
+}
+
+.header_socials_button_link.fb:hover::before{
+    background-position: 0 -19px;
+}
+
+.header_socials_button_link.yt::before{
+    width: 17px;
+    height: 21px;
+    margin: -10px 0 0 -9px;
+    background-position: -27px 0;
+}
+
+.header_socials_button_link.yt:hover{
+    background: #ff4343;
+}
+
+.header_socials_button_link.yt:hover::before{
+    background-position: -27px -21px;
+}
+
+.header_socials_button_link.insta::before{
+    width: 18px;
+    height: 19px;
+    margin: -10px 0 0 -9px;
+    background-position: -44px 0;
+}
+
+.header_socials_button_link.insta:hover{
+    background: url('img/header_socials.png') no-repeat -62px 0;
+}
+
+.header_socials_button_link.insta:hover::before{
+    background-position: -44px -19px;
+}
+
+/* Стили шапки */
+
+header {
+    height: 180px;
+    width: 100%;
+    outline: 1px solid red;
+    text-align: center;
+}
+
+.wrapper_content_header{
+    width: 85%;
+    height: 180px;
+    outline: 1px solid green;
+    margin: 0 auto;
+}
+
+/* Конец стилей шапки */
