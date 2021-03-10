@@ -29,43 +29,44 @@ dd {
 
 /* Стили социальных сетей в шапке */
 
-.mini_header{
+.mini_header {
     width: 100%;
     height: 40px;
     border-bottom: 1px solid #d5d5d5;
 
 }
 
-.mini_header_wrapper{
+.mini_header_wrapper {
     max-width: 1200px;
     height: 40px;
     margin: 0 auto;
 }
 
-.mini_header a:link{
+.mini_header a:link {
     text-decoration: none;
     cursor: pointer;
 }
 
-.header_socials_button_wrapper{
+.header_socials_button_wrapper {
     float: right;
     border-left: 1px solid #d5d5d5;
     margin: 0 5% 0 0;
 }
-.header_socials_button_item{
+
+.header_socials_button_item {
     float: left;
     width: 40px;
     height: 40px;
     list-style-type: none;
 }
 
-.header_socials_button_link{
+.header_socials_button_link {
     position: relative;
     display: block;
     height: 100%;
 }
 
-.header_socials_button_link::before{
+.header_socials_button_link::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -73,63 +74,63 @@ dd {
     background: url('img/header_socials.png') no-repeat 0 0;
 }
 
-.header_socials_button_link.vk::before{
+.header_socials_button_link.vk::before {
     width: 28px;
     height: 16px;
     margin: -8px 0 0 -14px;
     background-position: -102px 0;
 }
 
-.header_socials_button_link.vk:hover{
+.header_socials_button_link.vk:hover {
     background: #5f83aa;
 }
 
-.header_socials_button_link.vk:hover::before{
+.header_socials_button_link.vk:hover::before {
     background-position: -102px -16px;
 }
 
-.header_socials_button_link.fb::before{
+.header_socials_button_link.fb::before {
     width: 10px;
     height: 19px;
     margin: -10px 0 0 -5px;
     background-position: 0 0;
 }
 
-.header_socials_button_link.fb:hover{
+.header_socials_button_link.fb:hover {
     background: #496194;
 }
 
-.header_socials_button_link.fb:hover::before{
+.header_socials_button_link.fb:hover::before {
     background-position: 0 -19px;
 }
 
-.header_socials_button_link.yt::before{
+.header_socials_button_link.yt::before {
     width: 17px;
     height: 21px;
     margin: -10px 0 0 -9px;
     background-position: -27px 0;
 }
 
-.header_socials_button_link.yt:hover{
+.header_socials_button_link.yt:hover {
     background: #ff4343;
 }
 
-.header_socials_button_link.yt:hover::before{
+.header_socials_button_link.yt:hover::before {
     background-position: -27px -21px;
 }
 
-.header_socials_button_link.insta::before{
+.header_socials_button_link.insta::before {
     width: 18px;
     height: 19px;
     margin: -10px 0 0 -9px;
     background-position: -44px 0;
 }
 
-.header_socials_button_link.insta:hover{
+.header_socials_button_link.insta:hover {
     background: url('img/header_socials.png') no-repeat -62px 0;
 }
 
-.header_socials_button_link.insta:hover::before{
+.header_socials_button_link.insta:hover::before {
     background-position: -44px -19px;
 }
 
@@ -141,7 +142,7 @@ header {
     text-align: center;
 }
 
-.wrapper_content_header{
+.wrapper_content_header {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -150,14 +151,143 @@ header {
     flex-wrap: wrap;
 }
 
-.header_logo{
+.header_logo {
     background-image: url("img/logo.png");
     width: 404px;
-    height:150px;
+    height: 150px;
     align-self: start;
 }
 
-.header_banner img{
+.header_banner img {
     max-width: 100%;
 }
-/* Конец стилей шапки */
+
+/* Меню в шапке  */
+
+.top_menu {
+    background: #2c2c2c;
+    min-height: 52px;
+    transition: 0.3s all;
+}
+
+.top_menu_wrapper {
+    max-width: 1200px;
+    height: 52px;
+    margin: 0 auto;
+}
+
+.top_menu_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top_menu_list a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    line-height: 52px;
+    font-family: Lato, sans-serif;
+    font-weight: bolder;
+}
+
+.top_menu_item {
+    list-style-type: none;
+    width: 100%;
+    border-right: 1px solid #252525;
+    border-left: 1px solid #252525;
+}
+
+.top_menu_item:hover {
+    background-color: #252525;
+}
+
+.burger_menu{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    width: 40px;
+    height: 25px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.burger_line{
+    position: absolute;
+    top:0;
+    left: 3px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: black;
+}
+
+.second, .third{
+    top:10px;
+    transition: 0.3s all;
+}
+
+.fourth{
+    top:20px;
+    transition: 0.3s all;
+}
+
+.first.active{
+    display: none;
+}
+
+.fourth.active{
+    display: none;
+}
+
+.second.active{
+    transform: rotate(45deg);
+    background-color: white;
+    transition: 0.5s all;
+}
+
+.third.active{
+    transform: rotate(-45deg);
+    background-color: white;
+    transition: 0.5s all;
+}
+
+
+@media screen and (max-width: 1021px){
+    .top_menu_wrapper{
+        display: none;
+    }
+
+    .top_menu{
+        background: none;
+    }
+}
+
+@media screen and (min-width: 1022px){
+    .burger_menu{
+        display: none;
+    }
+}
+
+.top_menu.active {
+    background: #2c2c2c;
+    min-height: 52px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top_menu_wrapper.active{
+    display: block;
+}
+
+.top_menu_list.active {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top:50px;
+}
