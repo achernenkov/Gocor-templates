@@ -7,8 +7,8 @@ const topMenu = document.querySelector('.top_menu')
 const topMenuWrapper = document.querySelector('.top_menu_wrapper')
 const topMenuList = document.querySelector('.top_menu_list')
 const topMenuItem = document.querySelectorAll('.top_menu_item')
-
-console.log(topMenuItem)
+const subMenu = document.querySelectorAll('.sub_menu')
+console.log(subMenu)
 
 burger.addEventListener('click', (ev) => {
     ev.preventDefault()
@@ -24,5 +24,12 @@ burger.addEventListener('click', (ev) => {
         topMenuItem[i].classList.toggle('active')
     }
 
-
 })
+
+
+for (let i = 0; i < subMenu.length; i++){
+    subMenu[i].addEventListener('click', (ev) => {
+        ev.preventDefault()
+        ev.currentTarget.classList.toggle('opened')
+    })
+}

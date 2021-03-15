@@ -371,7 +371,7 @@ header {
         font-weight: bolder;
     }
 
-    .sub_menu_item:hover .sub_menu_l2{
+    .sub_menu_item.opened .sub_menu_l2{
         display: flex;
         flex-wrap: wrap;
     }
