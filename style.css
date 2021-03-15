@@ -194,6 +194,20 @@ header {
     border-left: 1px solid #252525;
 }
 
+.top_menu_list span {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    line-height: 52px;
+    font-family: Lato, sans-serif;
+    font-weight: bolder;
+    border-right: 1px solid #252525;
+    border-left: 1px solid #252525;
+    cursor: pointer;
+}
+
 .top_menu_item {
     list-style-type: none;
     width: 100%;
